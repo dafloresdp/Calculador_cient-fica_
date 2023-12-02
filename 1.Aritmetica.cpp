@@ -6,6 +6,8 @@ int main() {
     cout << "Has seleccionat la Calculadora aritmetica basica." << endl;
     cout << "Indica la teva operacio: suma (S), resta (R), multiplicacio (M), divisio (D) seguida dels 2 nombres a operar. Pots tancar aquesta funcio amb el commandament #." << endl;
 
+    bool error = false;
+
     while (true) {
         char operacio;
         cin >> operacio;
@@ -14,39 +16,37 @@ int main() {
             break;
         }
 
+        double num1, num2, resultat;
+
         if (operacio == 'S') {
-            float num1, num2, resultat;
             cin >> num1 >> num2;
             resultat = num1 + num2;
             cout << resultat << endl;
+            error = false;
+        } else if (operacio == 'R') {
+            cin >> num1 >> num2;
+            resultat = num1 - num2;
+            cout << resultat << endl;
+            error = false;
+        } else if (operacio == 'M') {
+            cin >> num1 >> num2;
+            resultat = num1 * num2;
+            cout << resultat << endl;
+            error = false;
+        } else if (operacio == 'D') {
+            cin >> num1 >> num2;
+            if (num2 != 0) {
+                resultat = num1 / num2;
+                cout << resultat << endl;
+                error = false;
+            } else {
+                cout << "Error: Divisio per zero." << endl;
+                error = true;
+            }
+        } else {
+            if (!error) {
+                cout << "Error: Valor incorrecte. Si us plau, introdueix un valor valid. Escriu 'A' per veure les instruccions de nou." << endl;
+                error = true;
+            }
         }
-
-      if (operacio == 'R') {
-          float num1, num2, resultat;
-
-      cin>>num1>>num2;
-      resultat= num1-num2;
-      cout<<resultat<<endl;
-      }
-      if (operacio == 'M') {
-          float num1, num2, resultat;
-
-      cin>>num1>>num2;
-      resultat= num1*num2;
-      cout<<resultat<<endl;
-      }
-
-        if (operacio == 'M') {
-          float num1, num2, resultat;
-
-      cin>>num1>>num2;
-      resultat= num1/num2;
-      cout<<resultat<<endl;
-      }
-else {
-
-    cout<<"Error: Valor incorrecte. Si us plau, introdueix un valor valid. A lo millor no has determinat quin tipus d'operació vols fer. Escriu 'A' per veure les instruccions de nou."<<endl;
-
-}
     }
-}
