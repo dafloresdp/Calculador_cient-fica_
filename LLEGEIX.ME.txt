@@ -1,0 +1,9 @@
+Errors codi 
+1. En el número 4 (Pitàgores) veuràs que em dona error una de les claus que està indexada al principi de tota la funció. El problema és que no hi ha manera de dir-li que ha d'estar al final d'aquesta i no a meitat de codi. 
+Ho probat amb el meu pare però tampoc podem.
+
+2. Les funcions '#' i 'A' no hem tornen quan vull. Estaria bé repasar la conversió string-->double.
+
+3. Encara que no hi hagi accents a les paraules, algunes surten amb números o simbologia.
+
+Fins aquí els meus dubtes/errors tinguts. Espero que estiguin solucionats demà! Fins aviat!
