@@ -1,6 +1,10 @@
 Errors codi 
 
 
-1. Funcions "Ajuda" i "Tornar al menú" no funcionen de nou. He estat varies hores intentant-ho, netejant buffers i tal, pero res.
+1. Funcions "Ajuda" i "Tornar al menú" no funcionen en tots els apartats de la calculadora, només alguns. Sí funcionen en el main menu.
+
+2. Ara en les potències, la primera no, però al segona operació que li demanes no funciona i has de fer input amb un altre número però t'agada l'ultim, és a dir: Fas a^b però no fa res, aleshores agafes un número c i et fa b^c. ABANS NO PASSAVA així que crec que al intentar arreglar tot el tema del while '#' m'he carregat d'alguna forma l'harmonía de l'apartat número 2 (potències).
 
 Fins aquí els meus dubtes/errors tinguts. Espero que estiguin solucionats demà! Fins aviat!
+
+PD: Aquesta vegada li he dedicat el doble d'hores però no he solucionat els problemes "Main" que eren "#" en apartats específics i la funció ajuda en apartats específics. Desanima bastant però espero resoldre-ho aviat i així poder programant "feliçment".
